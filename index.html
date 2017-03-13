@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My TodoList</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="jumbotron">
+      <h1>Check list</h1>
+
+      </div>
+      <div>  
+        <button class="btn btn-default" onclick="handlers.toggleAll()">Toggle Todos</button>
+      </div>
+    <div>
+      <button class="btn btn-default"  onclick="handlers.addTodo()">Add</button>
+      <input type="text" id="addTodoTextInput"   placeholder="Your todo">
+    </div>
+    <div>
+      <button class="btn btn-default"  onclick="handlers.changeTodo()" >Change Todo</button>
+      <input type="number" id = "changeTodoPositionInput"  placeholder="Todo Position">
+      <input type="text" id = "changeTodoTextInput"  placeholder="New Todo">
+    </div>
+    <div>
+      <button class="btn btn-default" onclick="handlers.toggleTodo()">Completed</button>
+      <input type="number" id="toggleTodoPositionInput"  placeholder="Todo Position">
+    </div>
+    <ul>
+    </ul>
+  </div>
+  
+  <script src="client.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

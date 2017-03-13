@@ -1,0 +1,12 @@
+html body {
+     background-color: #729C34;
+}
+
+div {
+ margin-bottom: 5px;
+}
+
+.jumbotron {
+    background-color:#557714 !important; 
+    color:white !important;
+}
